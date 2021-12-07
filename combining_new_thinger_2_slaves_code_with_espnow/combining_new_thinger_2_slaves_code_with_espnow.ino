@@ -61,6 +61,26 @@ void OnDataRecv(uint8_t * mac_addr, uint8_t *incomingData, uint8_t len) {
   Serial.printf("flowRate value: %f \n", boardsStruct[myData.id-1].flowRate);
   Serial.printf("totalMilliLitres value: %lu \n", boardsStruct[myData.id-1].totalMilliLitres);
   Serial.println();
+
+  if(myData.id == 1){
+    flowRate1 = myData.flowRate;
+    totalMilliLitres1 = myData.totalMilliLitres;
+  }
+  else if(myData.id == 2){
+    flowRate2 = myData.flowRate;
+    totalMilliLitres2 = myData.totalMilliLitres;
+  }
+
+/*
+    thing["data"] >> [](pson& out){
+      out["Flow Rate 1"] = flowRate1;
+      out["Total 1"]= totalMilliLitres1;
+      out["Flow Rate 2"] = flowRate2;
+      out["Total 2"]= totalMilliLitres2;
+    };
+    thing.handle();
+    thing.stream(thing["data"]);
+*/
 }
 
 
@@ -117,6 +137,7 @@ void loop()
     thing.handle();
     thing.stream(thing["data"]);
 
+/*
     if(flowRate1 < 35){
       flowRate1 += 10;
     }
@@ -135,4 +156,5 @@ void loop()
     totalMilliLitres2 = totalMilliLitres1 + 100;
 
     delay(2000);
+    */
 }
