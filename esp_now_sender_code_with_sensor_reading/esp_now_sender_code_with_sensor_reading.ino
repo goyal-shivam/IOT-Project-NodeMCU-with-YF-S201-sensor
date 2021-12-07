@@ -35,22 +35,12 @@ struct_message myData;
 
 // Callback when data is sent
 void OnDataSent(uint8_t *mac_addr, uint8_t sendStatus) {
-  Serial.print("\r\nLast Packet Send Status: ");
+  Serial.print("Last Packet Send Status: ");
   if (sendStatus == 0){
-    Serial.println("Delivery success");
-    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-    delay(100);                       // wait for a second
-    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+    Serial.println("Delivery success\n");
   }
   else{
-    Serial.println("Delivery fail");
-    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-    delay(100);                       // wait for a second
-    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(100);                       // wait for a second
-    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-    delay(100);                       // wait for a second
-    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+    Serial.println("Delivery fail\n");
   }
 }
 
@@ -90,10 +80,6 @@ void setup() {
   totalMilliLitres = 0;
   previousMillis = 0;
   attachInterrupt(digitalPinToInterrupt(SENSOR), pulseCounter, FALLING);
-
-
-  pinMode(LED_BUILTIN, OUTPUT);
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
 }
  
 void loop() {
