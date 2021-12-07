@@ -1,0 +1,37 @@
+V2V communication using 5G
+
+-> 5G / Wifi
+
+research paper if possible
+
+Ford's Vehicle to Vehicle communication
+https://www.youtube.com/watch?v=EIlafkLydYY
+
+Vehicle to vehicle communication using IoT (Thesis presentation)
+https://www.youtube.com/watch?v=5F0cVwd31R4
+
+LiFi Vehicle to Vehicle Communication - Final Year Project Ideas
+https://www.youtube.com/watch?v=v5F5xNQYgGs
+
+Potential Applications
+    Collision Alert
+    Road Condition Warnings
+    Merge assistance
+    deceleration Warnings
+
+    internet connectivity
+
+    gps
+    toll roads
+    cruise control
+
+Internet of Vehicles Network Communication
+    Intra-vehicle systems
+    vehicle to vehicle (V2V) systems
+    vehicle to infrastructure (V2I) systems
+    Vehicle to Cloud (V2C) systems
+    Vehicle to Pedestrian (V2P) systems
+
+3 layers - sensors, then networks (5G, Wifi etc) and then Application layer (the real use of the data)
+
+We will go for a low cost practical solution, which will help us solve some problem, and is feasible for implementation. Not very resource intensive solution

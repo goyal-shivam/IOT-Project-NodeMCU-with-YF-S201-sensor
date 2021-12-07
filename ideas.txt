@@ -1,0 +1,211 @@
+chemical sensors - water sent to garden supply
+use some flow sensors in the pipe, find out water leakages, and inform the people
+
+dams water management - people were killed due to sudden release of dam water. you can sense water level using sensors, and then release water accordingly, they can automatically send alarms to people.
+
+
+
+we need to have a data analysis on top of 
+
+
+most of the water wastage is in industries. societies in big cities.
+
+
+monitoring the entire building and accessing the water wastage etc.
+
+
+
+build a complete system, with very small payment charges required to install the system, very minimal installation charges
+
+
+
+
+send leakage notifications, heavy usage notifications
+applicable to gas pipelines also
+
+
+
+let's identify the practical problem, why big big societies do not go for water conservation systems
+
+
+
+
+official buildings are less taken care of by, so to make a solution for that part is much better. People who have individual houses, generally don't waste much water, and can easily save water
+
+
+
+
+
+
+
+
+maximum sources of water wastage - R.O. filters
+weather sensors to predict rain, and do irrigation based on that, get water from supply only how much we actually need
+
+
+
+
+
+
+we can create a complete holistic app which has many features, and is very low cost system, such that the authorities like it, it is practically feasible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+don't talk abstract, no one likes khyaali pulao, people need a proper solution to things
+
+we can send water usage statistics to the supply people, and they can further use the data for understanding the supply dynamics
+
+
+
+
+
+
+for many kilometers, there was an industrial society
+we are presenting some analytics to the owner based on the data we have received, and we can suggest somethings also to the person.
+
+sensors are on the pipes
+
+
+water quality measurement module
+
+occasionally get the tank cleaned, find out the way to find that the tank needs to be cleaned
+
+
+
+tell the water supply authorities
+
+
+
+
+
+
+
+
+ALFRED WILLIAM JACOB4:04 PM
+https://docs.google.com/document/d/1qd1s_hjp0BTODfm3N7WlKS6vgA7mFOhloo3LA8nNRLs/edit#
+Egna Praneeth Gummana4:08 PM
+What analysis did sir suggest?
+Siva4:40 PM
+I shared a Jam file with the meeting: https://jamboard.google.com/d/1yHldZgPO0IRTqASnwxFN9dBSmVpy_KbWJhP_d1Q7rA4/edit?usp=meet_whiteboard
+
+
+
+
+use machine learning to create a personalised set of parameters which define how much water is used by a particular house, and thus, the entire society usage data is found out, and sent to the government on a daily basis.
+
+Here, we can use federated learning, basically our model is getting improved everyday, globally, and it is dynamically getting trained on a huge amount of data
+
+
+
+
+
+
+water management framework for big housing industrial setups
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+look at more papers and more websites, to get more ideas, at other topics, and then create a comprehensive solution
+
+
+
+
+
+
+
+
+
+
+
+
+pressure sensors to check if pipe might break because of pressure increase
+stop water flow using valves in case of a leak
+cablespodsensor - can be installed in server rooms where water should not go at all.
+
+
+
+https://www.biz4intellia.com/water-leakage-detection-solution/
+
+
+Analysis and Prediction of Water Quality Using LSTM Deep Neural Networks in IoT Environment
+Real time monitoring of water Quality using IoT and Deep learning
+
+these are papers doing Deep learning after collecting data
+
+
+
+
+
+
+
+
+
+we will present the comprehensive idea to sir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+can we do something related to extracting out cleaner water from water dispose, rather than mixing everything into one, and throwing that away?
+
+can we do something that compels people to themselves close taps in buildings, instead of using huge amount of water? - mostly this is not IOT related
+
+talk about ground water pollution, about replenishing ground water level. using some devices which can clean the water sup
+
+
+there are 3 types of water outlets, washing water, toilet water and R.O. water.
+
+
+
+
+think of some hardware that can be installed over the already installed infrastructure
+
+
+
+
+
+
+
+put a band around the sink inlet pipe, to detect leakages
+
+
+put one sensor at the outlet basin also, and also detect if there is person standing in front of the sink or not. If not, close the valve.
+
+
+
+
+
+sensors used, and particular paper or blog using this technique so that we have concrete information
+
+leakages, water consumption in different units
