@@ -6,7 +6,7 @@ uint8_t broadcastAddress[] = {0x84, 0xCC, 0xA8, 0x88, 0x74, 0x09};
 
 // Set your Board ID (ESP32 Sender #1 = BOARD_ID 1, ESP32 Sender #2 = BOARD_ID 2, etc)
 #define BOARD_ID 1
-#define SENSOR  D3
+#define SENSOR  D4
 
 
 long currentMillis = 0;
