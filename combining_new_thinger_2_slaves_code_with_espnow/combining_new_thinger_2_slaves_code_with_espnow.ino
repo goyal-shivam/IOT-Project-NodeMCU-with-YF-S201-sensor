@@ -137,6 +137,8 @@ void loop()
     thing.handle();
     thing.stream(thing["data"]);
 
+    delay(100);
+
 /*
     if(flowRate1 < 35){
       flowRate1 += 10;
