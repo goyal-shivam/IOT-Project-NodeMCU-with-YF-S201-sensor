@@ -58,8 +58,8 @@ void OnDataRecv(uint8_t * mac_addr, uint8_t *incomingData, uint8_t len) {
   // Update the structures with the new incoming data
   boardsStruct[myData.id-1].flowRate = myData.flowRate;
   boardsStruct[myData.id-1].totalMilliLitres = myData.totalMilliLitres;
-  Serial.printf("flowRate value: %d \n", boardsStruct[myData.id-1].flowRate);
-  Serial.printf("totalMilliLitres value: %d \n", boardsStruct[myData.id-1].totalMilliLitres);
+  Serial.printf("flowRate value: %f \n", boardsStruct[myData.id-1].flowRate);
+  Serial.printf("totalMilliLitres value: %lu \n", boardsStruct[myData.id-1].totalMilliLitres);
   Serial.println();
 }
 
