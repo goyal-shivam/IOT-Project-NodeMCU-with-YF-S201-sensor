@@ -31,13 +31,13 @@ struct_message myData;
 void OnDataSent(uint8_t *mac_addr, uint8_t sendStatus) {
   Serial.print("Last Packet Send Status: ");
   if (sendStatus == 0){
-    Serial.println("Delivery success");
+    Serial.println("Delivery success\n");
 //    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
 //    delay(100);                       // wait for a second
 //    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
   }
   else{
-    Serial.println("Delivery fail");
+    Serial.println("Delivery fail\n");
 //    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
 //    delay(100);                       // wait for a second
 //    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
