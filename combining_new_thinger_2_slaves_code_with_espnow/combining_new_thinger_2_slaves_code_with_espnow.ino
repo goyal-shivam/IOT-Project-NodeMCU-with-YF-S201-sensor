@@ -1,7 +1,3 @@
-/*
-  This code is obtained on combining thinger.io code that
-  supports uploading 4 readings with espnow protocol rcvr code
-*/
 #include <ThingerESP8266.h>
 #include <ESP8266WiFi.h>
 #include <espnow.h>
@@ -70,17 +66,6 @@ void OnDataRecv(uint8_t * mac_addr, uint8_t *incomingData, uint8_t len) {
     flowRate2 = myData.flowRate;
     totalMilliLitres2 = myData.totalMilliLitres;
   }
-
-/*
-    thing["data"] >> [](pson& out){
-      out["Flow Rate 1"] = flowRate1;
-      out["Total 1"]= totalMilliLitres1;
-      out["Flow Rate 2"] = flowRate2;
-      out["Total 2"]= totalMilliLitres2;
-    };
-    thing.handle();
-    thing.stream(thing["data"]);
-*/
 }
 
 
@@ -107,27 +92,6 @@ void setup()
 }
 void loop()
 {
-//  currentMillis = millis();
-//  if (currentMillis - previousMillis > interval) {
-//    pulse1Sec = pulseCount;
-//    pulseCount = 0;
-//    flowRate = ((1000.0 / (millis() - previousMillis)) * pulse1Sec) / calibrationFactor;
-//    previousMillis = millis();
-//    flowMilliLitres = (flowRate / 60) * 1000;
-//    totalMilliLitres += flowMilliLitres;
-//    // Print the flow rate for this second in litres / minute
-//    Serial.print("Flow rate: ");
-//    Serial.print(int(flowRate));  // Print the integer part of the variable
-//    Serial.print("L/min");
-//    Serial.print("\t");       // Print tab space
-//    // Print the cumulative total of litres flowed since starting
-//    Serial.print("Output Liquid Quantity: ");
-//    Serial.print(totalMilliLitres);
-//    Serial.print("mL / ");
-//    Serial.print(totalMilliLitres / 1000);
-//    Serial.println("L");
-//}
-
     thing["data"] >> [](pson& out){
       out["Flow Rate 1"] = flowRate1;
       out["Total 1"]= totalMilliLitres1;
@@ -138,25 +102,4 @@ void loop()
     thing.stream(thing["data"]);
 
     delay(100);
-
-/*
-    if(flowRate1 < 35){
-      flowRate1 += 10;
-    }
-    else{
-      flowRate1 = 10;
-    }
-
-    if(totalMilliLitres1 < 75){
-      totalMilliLitres1 += 10;
-    }
-    else{
-      totalMilliLitres1 = 50;
-    }
-
-    flowRate2 = flowRate1 + 100;
-    totalMilliLitres2 = totalMilliLitres1 + 100;
-
-    delay(2000);
-    */
 }

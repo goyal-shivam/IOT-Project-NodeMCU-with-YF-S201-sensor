@@ -1,10 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <espnow.h>
 
-// REPLACE WITH RECEIVER MAC Address
 uint8_t broadcastAddress[] = {0x84, 0xCC, 0xA8, 0x88, 0x74, 0x09};
 
-// Set your Board ID (ESP32 Sender #1 = BOARD_ID 1, ESP32 Sender #2 = BOARD_ID 2, etc)
 #define BOARD_ID 1
 #define SENSOR  D3
 
@@ -22,18 +20,16 @@ unsigned long totalMilliLitres;
 
 
 
-// Structure example to send data
-// Must match the receiver structure
 typedef struct struct_message {
     int id;
     float flowRate;
     unsigned long totalMilliLitres;
 } struct_message;
 
-// Create a struct_message called test to store variables to be sent
+
 struct_message myData;
 
-// Callback when data is sent
+
 void OnDataSent(uint8_t *mac_addr, uint8_t sendStatus) {
   Serial.print("Last Packet Send Status: ");
   if (sendStatus == 0){
